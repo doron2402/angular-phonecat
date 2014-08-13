@@ -5,7 +5,6 @@
 var phonecatApp = angular.module('phonecatApp', [
   'ngRoute',
   'phonecatAnimations',
-
   'phonecatControllers',
   'phonecatFilters',
   'phonecatServices'
@@ -21,6 +20,10 @@ phonecatApp.config(['$routeProvider',
       when('/phones/:phoneId', {
         templateUrl: 'partials/phone-detail.html',
         controller: 'PhoneDetailCtrl'
+      }).
+      when('/contact', {
+        templateUrl: 'partials/contact.html',
+        controller: 'ContactUsCtrl'
       }).
       otherwise({
         redirectTo: '/phones'
