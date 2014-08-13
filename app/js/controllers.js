@@ -20,6 +20,7 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Ph
       $scope.mainImageUrl = imageUrl;
     }
   }]);
+<<<<<<< HEAD
 
 //Contact controller
 phonecatControllers.controller('ContactUsCtrl', ['$scope', 'Phone',
@@ -27,3 +28,5 @@ phonecatControllers.controller('ContactUsCtrl', ['$scope', 'Phone',
     $scope.phones = Phone.query();
     $scope.orderProp = 'age';
   }]);
+=======
+>>>>>>> 3da7f8c9a03119a99925345aa4568021eb9a8a01
